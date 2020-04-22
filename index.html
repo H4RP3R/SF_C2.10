@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Voting</title>
+</head>
+
+<body class="d-flex flex-column">
+    <div id="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h1>Make Your Choice</h1>
+                                <div class="color-mask"></div>
+                                <img src="IMG/cat.png" class="d-block w-100" alt="cat">
+                            </div>
+                            <div class="carousel-item">
+                                <h1>Vote Now</h1>
+                                <div class="color-mask"></div>
+                                <img src="IMG/dog.png" class="d-block w-100" alt="cat">
+                            </div>
+                            <div class="carousel-item">
+                                <h1>For a Better Tomorrow</h1>
+                                <div class="color-mask"></div>
+                                <img src="IMG/parrot.png" class="d-block w-100" alt="cat">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div id="bttn-set" display="none">
+                        <button id="cats-bttn" type="button" class="btn btn-outline-primary">Cat</button>
+                        <button id="dogs-bttn" type="button" class="btn btn-outline-primary">Dog</button>
+                        <button id="parrots-bttn" type="button" class="btn btn-outline-primary">Parrot</button>
+                    </div>
+                    <div id="allert-message" class="alert alert-success text-center" role="alert">
+                        Your opinion is extremely important to us.
+                    </div>
+                    <div class="res-link text-center">
+                        <a href="statistics.html">view results</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-copyright">© 2020 Copyright:
+                <a href="index.html"> Animal Voting</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

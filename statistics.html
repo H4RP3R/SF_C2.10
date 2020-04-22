@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Results</title>
+</head>
+
+<body class="d-flex flex-column">
+    <div id="page-content">
+        <div class="container">
+            <div class="rov">
+                <div class="col-md-6 offset-md-3">
+                    <div class="header">
+                        <h1>Results</h1>
+                    </div>
+                </div>
+            </div>
+            <div id="rov-1" class="rov">
+                <div class="col-md-6 offset-md-3">
+                    <div class="frame border border-info rounded">
+                        <h2>Cats</h2>
+                        <p>total votes: <span id="cats-num">0</span></p>
+                        <div class="progress">
+                            <div id="cats-progress" class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span id="cats-percent">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rov-2" class="rov">
+                <div class="col-md-6 offset-md-3">
+                    <div class="frame border border-info rounded">
+                        <h2>Dogs</h2>
+                        <p>total votes: <span id="dogs-num">0</span></p>
+                        <div class="progress">
+                            <div id="dogs-progress" class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span id="dogs-percent">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="rov-3" class="rov">
+                <div class="col-md-6 offset-md-3">
+                    <div class="frame border border-info rounded">
+                        <h2>Parrots</h2>
+                        <p>total votes: <span id="parrots-num">0</span></p>
+                        <div class="progress">
+                            <div id="parrots-progress" class="progress-bar bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                                <span id="parrots-percent">0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="
+                                container">
+            <div class="footer-copyright">© 2020 Copyright:
+                <a href="index.html"> Animal Voting</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/progress.js"></script>
+</body>
+
+</html>
