@@ -11,10 +11,10 @@ $(document).ready(function() {
             // log response status
             console.log(response);
         });
-        // disable and hide and hide all the buttons
+        // disable and hide all buttons
         $('button').prop('disabled', true);
         $('#bttn-set').hide();
-        // show the message and the link
+        // show the message and link
         $('#allert-message').fadeIn(1200);
         $('.res-link').fadeIn(2800);
     });
