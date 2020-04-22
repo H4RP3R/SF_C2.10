@@ -8,36 +8,55 @@ $(document).ready(function() {
     // + cats
     $('#cats-bttn').click(function() {
         $.post(catsVote, function(response) {
-            // log response status
-            console.log(response);
+            // response received
+            console.log(response.message);
+            if (response.message === 'Ok') {
+                $('#success-message').fadeIn(1200);
+            } else {
+                $('#allert-message').fadeIn(1200);
+            }
+            // no response received
+        }).fail(function(response) {
+            $('#allert-message').fadeIn(1200);
         });
         // disable and hide all buttons
         $('button').prop('disabled', true);
         $('#bttn-set').hide();
-        // show the message and link
-        $('#allert-message').fadeIn(1200);
+        // show the link
         $('.res-link').fadeIn(2800);
     });
 
     // + dogs
     $('#dogs-bttn').click(function() {
         $.post(dogsVote, function(response) {
-            console.log(response);
+            console.log(response.message);
+            if (response.message === 'Ok') {
+                $('#success-message').fadeIn(1200);
+            } else {
+                $('#allert-message').fadeIn(1200);
+            }
+        }).fail(function(response) {
+            $('#allert-message').fadeIn(1200);
         });
         $('button').prop('disabled', true);
         $('#bttn-set').hide();
-        $('#allert-message').fadeIn(1200);
-        $('.res-link').fadeIn(2400);
+        $('.res-link').fadeIn(2800);
     });
 
     // + parrots
     $('#parrots-bttn').click(function() {
         $.post(parrotsVote, function(response) {
-            console.log(response);
+            console.log(response.message);
+            if (response.message === 'Ok') {
+                $('#success-message').fadeIn(1200);
+            } else {
+                $('#allert-message').fadeIn(1200);
+            }
+        }).fail(function(response) {
+            $('#allert-message').fadeIn(1200);
         });
         $('button').prop('disabled', true);
         $('#bttn-set').hide();
-        $('#allert-message').fadeIn(1200);
-        $('.res-link').fadeIn(2400);
+        $('.res-link').fadeIn(2800);
     });
 });

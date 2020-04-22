@@ -70,7 +70,7 @@ a:hover {
     /* display: none; */
 }
 
-#allert-message {
+.alert {
     margin-top: 12px;
     display: none;
 }
@@ -94,6 +94,13 @@ a:hover {
 .frame {
     margin-top: 12px;
     padding: 8px;
+}
+
+#total-votes {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: 12px;
+    display: none;
 }
 
 .footer-copyright {

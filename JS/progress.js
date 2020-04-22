@@ -19,6 +19,7 @@ $(document).ready(function() {
         $('#rov-1').fadeIn(200);
         $('#rov-2').fadeIn(600);
         $('#rov-3').fadeIn(1000);
+        $('#total-votes').fadeIn(1400);
 
         // cats
         $('#cats-num').text(message['cats']);
@@ -39,6 +40,9 @@ $(document).ready(function() {
         num = Math.round(message['parrots'] * 100 / totalVotes);
         $('#parrots-percent').text(`${num}%`)
         $('#parrots-progress').css('width', `${num}%`);
+
+        // total
+        $('#total-votes').text(`total votes: ${totalVotes}`);
     }
 
     ES.onerror = error => {
